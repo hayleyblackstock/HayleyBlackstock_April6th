@@ -10,4 +10,9 @@ Rails.application.routes.draw do
 
   resources :appointments, only: [:index]
 
+  resources :users do
+      resources :appointments
+    end
+
+
 end

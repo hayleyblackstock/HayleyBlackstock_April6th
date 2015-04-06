@@ -1,0 +1,2 @@
+<% @doctors.each do |f| %>
+<%= f.collection_select :doctor_id, Doctor.all, :id, :name, {include_blank: true}%>
